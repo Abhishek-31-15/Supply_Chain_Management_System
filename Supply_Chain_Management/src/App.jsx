@@ -1,17 +1,29 @@
-import './App.css'
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/home/home";
+import Platform from "./pages/platform/platform";
+import Resources from "./pages/resources/resources";
+import Services from "./pages/services/services";
+import Trackorder from "./pages/trackorder/Trackorder";
+import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
 
 function App() {
-
   return (
-    <> 
+    <>
+      <Navbar />
 
-       <h1 className="text-xl font-bold text-red-500">OFFICE SAHAYOGI </h1>
+      <Routes>
+        <Route path="/" element={Home}></Route>
+        <Route path="/platform" element={Platform}></Route>
+        <Route path="/resources" element={Resources}></Route>
+        <Route path="/services" element={Services}></Route>
+        <Route path="/trackorder" element={Trackorder}></Route>
+      </Routes>
 
-       <div className="flex justify-center items-center h-screen bg-blue-500 text-white text-2xl">
-       SUPPLY CHAIN MANAGEMENT SOFTWARE
-    </div>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
