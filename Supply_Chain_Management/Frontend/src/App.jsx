@@ -14,11 +14,11 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route path="/" element={Home}></Route>
-        <Route path="/platform" element={Platform }></Route>
-        <Route path="/resources" element={Resources}></Route>
-        <Route path="/services" element={Services}></Route>
-        <Route path="/trackorder" element={Trackorder}></Route>
+        <Route path="/" element={<Home/>} />
+        <Route path="/platform" element={<Platform />} />
+        <Route path="/resources" element={<Resources/>} />
+        <Route path="/services" element={<Services/>} />
+        <Route path="/trackorder" element={<Trackorder/>} />
       </Routes>
 
       <Footer />
